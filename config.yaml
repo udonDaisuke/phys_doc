@@ -1,0 +1,20 @@
+input_pdf_directory : "../.."
+project_directory : "./projects"
+image_directory : "../images" # pdから抽出した画像の保存先（md保存先からの相対パス）
+git_repository_url : null
+
+
+header_rules :
+  - level: "#"
+    min_size: 13
+    max_size: null   
+    font_type: "bold"
+  - level: "##"
+    min_size: 12
+    max_size: null
+    font_type: "bold"
+  - level: "###"
+    min_size: 12
+    max_size: null
+    font_type: "italic"
+

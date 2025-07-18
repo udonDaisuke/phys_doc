@@ -1,0 +1,21 @@
+project_directory : "projects"
+input_pdf_directory : "." # 実行フォルダを基準とした相対パスOR絶対パス
+output_directory_basename : "output_original"
+
+git_repository_url : null
+
+
+header_rules :
+  - level: "#"
+    min_size: 13
+    max_size: null   
+    font_type: "bold"
+  - level: "##"
+    min_size: 12
+    max_size: null
+    font_type: "bold"
+  - level: "###"
+    min_size: 12
+    max_size: null
+    font_type: "italic"
+
