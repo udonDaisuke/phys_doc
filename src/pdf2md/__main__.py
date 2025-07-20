@@ -12,7 +12,8 @@ def main(file_name: str):
     input_pdf_dir = Path(config["input_pdf_directory"]).absolute()
     projects_dir = Path(config["project_directory"]).absolute()
     print(input_pdf_dir, projects_dir)
-    ensure_dir(projects_dir/Path(str(file_name)).stem/config["output_directory_basename"]/"images")
+    file_name = file_name.strip('"')
+    ensure_dir(projects_dir/Path(str(file_name)).stem/config["output_directory_basename"]/"../images")
 
     input_pdf_file = input_pdf_dir/file_name
     print(input_pdf_file)

@@ -6,9 +6,12 @@ dist/
 wheels/
 *.egg-info
 
+# project & environment dependent files
 projects
 backup
+tmp_script/*.*
 *.pdf
+
 
 # Virtual environments
 .venv
